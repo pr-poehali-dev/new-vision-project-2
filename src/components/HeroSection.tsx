@@ -122,13 +122,19 @@ export function HeroSection() {
 
           {/* Right — photo */}
           <div className="hidden lg:flex justify-end items-center animate-fade-in-up">
-            <div className="relative w-[420px] h-[560px]">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/20 to-primary/5 blur-2xl scale-105" />
-              <img
-                src="https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/0f497dd8-2ab2-438f-8f01-10347711fb59.jpg"
-                alt="Екатерина Бледных"
-                className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
-              />
+            <div className="flex flex-col items-center gap-4">
+              <div className="relative w-[420px] h-[560px]">
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/20 to-primary/5 blur-2xl scale-105" />
+                <img
+                  src="https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/0f497dd8-2ab2-438f-8f01-10347711fb59.jpg"
+                  alt="Екатерина Бледных"
+                  className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
+                />
+              </div>
+              <div className="text-center">
+                <p className="text-xl font-semibold">Екатерина Бледных</p>
+                <p className="text-sm text-muted-foreground">Ведущая & DJ</p>
+              </div>
             </div>
           </div>
         </div>
