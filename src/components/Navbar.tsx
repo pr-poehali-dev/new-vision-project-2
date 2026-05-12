@@ -34,7 +34,7 @@ export function Navbar() {
               Услуги
             </a>
             <a href="#portfolio" className="text-sm font-medium hover:text-primary transition-colors">
-              Портфолио
+              Мероприятия
             </a>
             <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
               Тарифы

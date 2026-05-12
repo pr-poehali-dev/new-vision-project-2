@@ -38,10 +38,10 @@ export function ContactSection() {
             Контакты
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Давайте <span className="text-primary">создавать вместе</span>
+            Давайте устроим <span className="text-primary">незабываемый праздник</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Готовы воплотить ваши цифровые амбиции? Свяжитесь с нами без обязательств и узнайте, чем мы можем помочь.
+            Оставьте заявку — свяжемся в течение часа, обсудим ваше мероприятие и подберём лучший формат.
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export function ContactSection() {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Расскажите о вашем проекте..."
+                      placeholder="Расскажите о вашем мероприятии: тип события, дата, город, количество гостей..."
                       rows={6}
                       required
                       className="transition-all focus:scale-[1.02]"
@@ -158,11 +158,11 @@ export function ContactSection() {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Время работы</h3>
+                    <h3 className="font-semibold mb-1">Города</h3>
                     <p className="text-sm text-muted-foreground">
-                      Пн - Пт: 9:00 - 18:00
+                      Курган · Тюмень · Челябинск
                       <br />
-                      Выходные: по договоренности
+                      Выезд в другие города — по договорённости
                     </p>
                   </div>
                 </div>

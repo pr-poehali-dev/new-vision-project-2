@@ -1,43 +1,37 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { ExternalLink } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "Умный помощник по выборам",
-    category: "AI/ML и веб-разработка",
-    image: "/omgekeerdestemwijzer-banner.png",
+    title: "Свадьба Алексея и Марины",
+    category: "Свадьба · Курган",
+    image: "/placeholder.jpg",
     description:
-      "AI-приложение для выборов. Пользователи задают вопросы о позициях партий и получают 100% фактические ответы из официальных программ с использованием RAG-технологии.",
-    url: "https://de-omgekeerde-stemwijzer.onrender.com/",
-    tags: ["Next.js", "AI/ML", "RAG", "TypeScript"],
+      "Торжество на 120 гостей в загородном комплексе. Авторский сценарий, живая музыка, DJ-сет до утра. Молодожёны до сих пор вспоминают этот вечер как лучший в жизни.",
+    tags: ["Свадьба", "DJ-сет", "120 гостей"],
   },
   {
-    title: "Автомойка Tahsin",
-    category: "Веб-дизайн и разработка",
-    image: "/autopoetsbedrijf-tahsin-project.png",
+    title: "Юбилей компании «СтройГрупп»",
+    category: "Корпоратив · Тюмень",
+    image: "/placeholder.jpg",
     description:
-      "Профессиональный сайт для автомойки с 20-летним опытом. Полная презентация услуг, автомойки и гаража с современным адаптивным дизайном.",
-    url: "https://www.autopoetsbedrijftahsin.nl/",
-    tags: ["React", "Next.js", "Tailwind CSS"],
+      "10-летие компании на 200 человек. Деловая часть плавно перетекла в яркую вечеринку с тематическими конкурсами и профессиональным DJ-сетом.",
+    tags: ["Корпоратив", "200 гостей", "DJ-сет"],
   },
   {
-    title: "Кадровое агентство CAN",
-    category: "Веб-разработка",
-    image: "/can-uitzendbureau-project.png",
+    title: "Выпускной 11-А класса",
+    category: "Выпускной · Челябинск",
+    image: "/placeholder.jpg",
     description:
-      "Кадровое агентство с 30-летним опытом в садоводческом секторе. Сайт с обзором услуг и прямыми контактами для работодателей и соискателей.",
-    url: "https://canbv.nl/",
-    tags: ["Next.js", "React", "Tailwind CSS"],
+      "Незабываемый выпускной для 80 выпускников и их родителей. Трогательные моменты, зажигательные танцы и яркое шоу-программа — вечер прошёл на одном дыхании.",
+    tags: ["Выпускной", "80 гостей"],
   },
   {
-    title: "Портфолио Murat Sahin",
-    category: "Портфолио-сайт",
-    image: "/murat-sahin-portfolio.png",
+    title: "Юбилей Натальи Ивановны — 50 лет",
+    category: "День рождения · Курган",
+    image: "/placeholder.jpg",
     description:
-      "Профессиональное портфолио full-stack разработчика. Демонстрация проектов, навыков и опыта с современным минималистичным дизайном и темной темой.",
-    url: "https://murat-sahin-dev.vercel.app/",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", ".NET Core"],
+      "Тёплый семейный праздник с близкими и друзьями. Индивидуальный сценарий с историями из жизни именинницы, трогательные видеопоздравления и живая музыка.",
+    tags: ["Юбилей", "День рождения", "50 гостей"],
   },
 ]
 
@@ -46,9 +40,9 @@ export function PortfolioSection() {
     <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наше портфолио</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наши мероприятия</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Ознакомьтесь с подборкой наших последних проектов и узнайте, как мы помогаем бизнесу расти с помощью мощных цифровых решений.
+            Каждое событие — отдельная история. Посмотрите на несколько наших любимых работ.
           </p>
         </div>
 
@@ -64,16 +58,7 @@ export function PortfolioSection() {
                   alt={project.title}
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <Button
-                    size="sm"
-                    variant="secondary"
-                    className="gap-2"
-                    onClick={() => window.open(project.url, "_blank")}
-                  >
-                    Открыть проект <ExternalLink className="h-4 w-4" />
-                  </Button>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               </div>
               <CardContent className="p-6">
                 <p className="text-sm text-primary font-semibold mb-2">{project.category}</p>
