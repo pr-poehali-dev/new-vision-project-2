@@ -3,7 +3,7 @@ export function Logo({ className = "" }: { className?: string }) {
     <div className={`flex items-center gap-2 ${className}`}>
       <div className="flex items-center gap-1">
         <span className="text-2xl font-bold text-primary">🎤</span>
-        <span className="text-xl font-semibold tracking-tight ml-1">ПраздникПро</span>
+        <span className="text-xl font-semibold tracking-tight ml-1">Екатерина Бледных</span>
       </div>
     </div>
   )

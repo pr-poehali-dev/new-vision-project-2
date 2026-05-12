@@ -6,11 +6,11 @@ export function Footer() {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">ПраздникПро</h3>
+            <h3 className="text-xl font-bold mb-4">Екатерина Бледных</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Профессиональный ведущий и диджей.<br />
               Курган · Тюмень · Челябинск<br />
-              © 2025 ПраздникПро. Все права защищены.
+              © 2025 Екатерина Бледных. Все права защищены.
             </p>
           </div>
 
