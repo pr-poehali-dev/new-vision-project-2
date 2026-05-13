@@ -76,11 +76,6 @@ function WeddingSlider() {
         <p className="text-muted-foreground text-sm leading-relaxed mb-4">
           Фрагменты лучших моментов: от трепетной церемонии до весёлого банкета. Каждая фотография — история любви, рассказанная без слов.
         </p>
-        <div className="flex flex-wrap gap-2">
-          {["Свадьба", "DJ-сет", "120 гостей"].map((tag, i) => (
-            <span key={i} className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground">{tag}</span>
-          ))}
-        </div>
       </CardContent>
     </Card>
   )
@@ -114,14 +109,7 @@ export function PortfolioSection() {
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                <p className="text-muted-foreground text-sm leading-relaxed">{project.description}</p>
               </CardContent>
             </Card>
           ))}
