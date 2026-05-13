@@ -22,13 +22,15 @@ const birthdayPhotos = [
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/852f1e2e-8b0a-46c5-a626-117cd982d863.jpg",
 ]
 
+const corporatePhotos = [
+  "https://cdn.poehali.dev/files/fbdae9bb-8b15-47ba-95ae-5e77462d4ac7.jpg",
+  "https://cdn.poehali.dev/files/72b59add-6834-4e83-aa03-a702deb8e210.jpg",
+  "https://cdn.poehali.dev/files/6b1eda70-4bec-40a1-ab54-732700167a5b.jpg",
+  "https://cdn.poehali.dev/files/5c82051b-595e-424e-b6f6-cf8a8c6e0ec4.jpg",
+  "https://cdn.poehali.dev/files/25897e3e-81d8-48bf-b986-71aad5129691.jpg",
+]
+
 const projects = [
-  {
-    title: "Юбилеи компаний и корпоративы",
-    image: "/placeholder.jpg",
-    description:
-      "Деловая часть плавно перетекла в яркую вечеринку с тематическими конкурсами и профессиональным DJ-сетом.",
-  },
   {
     title: "Выпускной 11-А класса",
     image: "/placeholder.jpg",
@@ -85,6 +87,7 @@ export function PortfolioSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <PhotoSlider photos={weddingPhotos} title="Свадебное торжество" description="Фрагменты лучших моментов: от трепетной церемонии до весёлого банкета. Каждая фотография — история любви, рассказанная без слов." wide />
           <PhotoSlider photos={birthdayPhotos} title="Дни рождения и юбилеи" description="Тёплый семейный праздник с близкими и друзьями. С историями из жизни именинницы и трогательными видеопоздравлениями." wide />
+          <PhotoSlider photos={corporatePhotos} title="Юбилеи компаний и корпоративы" description="Деловая часть плавно перетекла в яркую вечеринку с тематическими конкурсами и профессиональным DJ-сетом." wide />
           {projects.map((project, index) => (
             <Card
               key={index}
