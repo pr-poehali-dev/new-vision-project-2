@@ -50,7 +50,7 @@ export function ServicesSection() {
           Наши мероприятия
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 text-balance">
-          Проведём любой <span className="text-primary">праздник</span>
+          Организуем любой <span className="text-primary">праздник</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto text-pretty leading-relaxed text-lg">
           Каждое мероприятие — уникальное шоу, созданное специально для вас. Индивидуальный подход, живые эмоции и профессиональный сервис.
