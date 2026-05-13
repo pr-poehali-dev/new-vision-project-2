@@ -83,7 +83,7 @@ export function PortfolioSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <PhotoSlider photos={weddingPhotos} title="Свадьбы" description="Фрагменты лучших моментов: от трепетной церемонии до весёлого банкета. Каждая фотография — история любви, рассказанная без слов." wide />
+          <PhotoSlider photos={weddingPhotos} title="Свадебное торжество" description="Фрагменты лучших моментов: от трепетной церемонии до весёлого банкета. Каждая фотография — история любви, рассказанная без слов." wide />
           <PhotoSlider photos={birthdayPhotos} title="Дни рождения и юбилеи" description="Тёплый семейный праздник с близкими и друзьями. С историями из жизни именинницы и трогательными видеопоздравлениями." wide />
           {projects.map((project, index) => (
             <Card
