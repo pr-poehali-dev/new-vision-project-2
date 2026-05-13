@@ -131,10 +131,7 @@ export function HeroSection() {
                   className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
                 />
               </div>
-              <div className="text-center">
-                <p className="text-xl font-semibold">Екатерина Бледных</p>
-                <p className="text-sm text-muted-foreground">Ведущая & DJ</p>
-              </div>
+              <p className="text-xl font-semibold">Екатерина Бледных</p>
             </div>
           </div>
         </div>
