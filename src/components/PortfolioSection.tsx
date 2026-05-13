@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const projects = [
   {
-    title: "Свадьба Алексея и Марины",
+    title: "Свадьбы",
     category: "Свадьба · Курган",
     image: "/placeholder.jpg",
     description:
