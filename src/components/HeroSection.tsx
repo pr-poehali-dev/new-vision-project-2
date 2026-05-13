@@ -79,9 +79,7 @@ export function HeroSection() {
               </span>
             </h1>
 
-            <p className="text-xl sm:text-2xl text-muted-foreground mb-10 animate-fade-in-up animate-delay-100 leading-relaxed">
-              Свадьбы, дни рождения, корпоративы, выпускные — создаём атмосферу, которую гости вспоминают годами. Работаем в Кургане, Тюмени и Челябинске.
-            </p>
+            <p className="sm:text-2xl text-muted-foreground animate-fade-in-up animate-delay-100 leading-relaxed mx-0 my-5 py-0 text-center text-lg font-extrabold">Забыть о хлопотах, передать заботы обо всех деталях торжества в опытные руки и просто наслаждаться предвкушением вашего самого главного дня… Доверьте организацию свадьбы Екатерине Бледных и будьте спокойны: ваша свадьба будет идеальной!</p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-200 mb-12">
               <Button
@@ -107,7 +105,7 @@ export function HeroSection() {
             <div className="flex flex-wrap items-center gap-8 text-sm text-muted-foreground animate-fade-in-up animate-delay-300">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                <span>200+ мероприятий</span>
+                <span>500+ мероприятий</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-primary animate-pulse" style={{ animationDelay: "0.5s" }} />
@@ -115,7 +113,7 @@ export function HeroSection() {
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-primary animate-pulse" style={{ animationDelay: "1s" }} />
-                <span>7+ лет опыта</span>
+                <span>10+ лет опыта</span>
               </div>
             </div>
           </div>
@@ -128,12 +126,12 @@ export function HeroSection() {
                 <img
                   src="https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/0f497dd8-2ab2-438f-8f01-10347711fb59.jpg"
                   alt="Екатерина Бледных"
-                  className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
+                  className="relative w-full h-full rounded-3xl shadow-2xl object-cover"
                 />
               </div>
               <div className="text-center">
                 <p className="text-xl font-semibold">Екатерина Бледных</p>
-                <p className="text-sm text-muted-foreground">Ведущая & DJ</p>
+                <p className="text-sm text-muted-foreground">Ведущая & организатор</p>
               </div>
             </div>
           </div>
