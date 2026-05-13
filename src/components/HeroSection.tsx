@@ -79,7 +79,7 @@ export function HeroSection() {
               </span>
             </h1>
 
-            <p className="sm:text-2xl text-muted-foreground animate-fade-in-up animate-delay-100 leading-relaxed mx-0 my-5 py-0 text-center text-lg font-extrabold">Забыть о хлопотах, передать заботы обо всех деталях торжества в опытные руки и просто наслаждаться предвкушением вашего самого главного дня… Доверьте организацию свадьбы Екатерине Бледных и будьте спокойны: ваша свадьба будет идеальной!</p>
+            <p className="sm:text-2xl text-muted-foreground animate-fade-in-up animate-delay-100 leading-relaxed mx-0 my-5 py-0 text-center text-lg font-extrabold">Забыть о хлопотах, передать заботы обо всех деталях торжества в опытные руки и просто наслаждаться предвкушением вашего самого главного дня… Доверьте организацию Торжества нашей команде и будьте спокойны: ваша свадьба будет идеальной!</p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-200 mb-12">
               <Button
