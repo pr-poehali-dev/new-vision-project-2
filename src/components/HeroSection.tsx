@@ -131,7 +131,7 @@ export function HeroSection() {
               </div>
               <div className="text-center">
                 <p className="text-xl font-semibold">Екатерина Бледных</p>
-                <p className="text-sm text-muted-foreground">Ведущая & организатор</p>
+                <p className="text-sm text-muted-foreground">Ведущая & Организатор</p>
               </div>
             </div>
           </div>
