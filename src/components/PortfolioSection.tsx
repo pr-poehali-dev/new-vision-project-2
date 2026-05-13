@@ -1,17 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card"
+import { useState } from "react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
+
+const weddingPhotos = [
+  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/4fee5e34-1866-413e-91f6-90e9d824742f.jpg",
+  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/e3419b76-4d7a-43a9-bc4e-342809264e5c.jpg",
+  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/314cf467-1cfb-4105-86ee-25fff4802e0a.jpg",
+  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/ef769249-dd6d-4fd9-a04f-0f13f6baa998.jpg",
+  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/b5b2724f-6ef7-46d6-8148-b02ce8981c27.jpg",
+]
 
 const projects = [
   {
-    title: "Свадьбы",
-    category: "Свадьба · Курган",
-    image: "/placeholder.jpg",
-    description:
-      "Фрагменты лучших моментов: от трепетной церемонии до весёлого банкета. Каждая фотография — история любви, рассказанная без слов.",
-    tags: ["Свадьба", "DJ-сет", "120 гостей"],
-  },
-  {
     title: "Юбилеи компаний и корпоративы",
-    category: "Корпоратив · Тюмень",
     image: "/placeholder.jpg",
     description:
       "10-летие компании на 200 человек. Деловая часть плавно перетекла в яркую вечеринку с тематическими конкурсами и профессиональным DJ-сетом.",
@@ -19,7 +20,6 @@ const projects = [
   },
   {
     title: "Выпускной 11-А класса",
-    category: "Выпускной · Челябинск",
     image: "/placeholder.jpg",
     description:
       "Незабываемый выпускной для 80 выпускников и их родителей. Трогательные моменты, зажигательные танцы и яркое шоу-программа — вечер прошёл на одном дыхании.",
@@ -27,13 +27,64 @@ const projects = [
   },
   {
     title: "Юбилей Натальи Ивановны — 50 лет",
-    category: "День рождения · Курган",
     image: "/placeholder.jpg",
     description:
       "Тёплый семейный праздник с близкими и друзьями. Индивидуальный сценарий с историями из жизни именинницы, трогательные видеопоздравления и живая музыка.",
     tags: ["Юбилей", "День рождения", "50 гостей"],
   },
 ]
+
+function WeddingSlider() {
+  const [current, setCurrent] = useState(0)
+
+  const prev = () => setCurrent((c) => (c - 1 + weddingPhotos.length) % weddingPhotos.length)
+  const next = () => setCurrent((c) => (c + 1) % weddingPhotos.length)
+
+  return (
+    <Card className="group overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 md:col-span-2">
+      <div className="relative overflow-hidden aspect-video">
+        <img
+          src={weddingPhotos[current]}
+          alt="Свадьбы"
+          className="w-full h-full object-cover object-center transition-all duration-500"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+        <button
+          onClick={prev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-background/60 hover:bg-background/90 rounded-full p-2 transition-all"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={next}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-background/60 hover:bg-background/90 rounded-full p-2 transition-all"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          {weddingPhotos.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`w-2 h-2 rounded-full transition-all ${i === current ? "bg-white scale-125" : "bg-white/50"}`}
+            />
+          ))}
+        </div>
+      </div>
+      <CardContent className="p-6">
+        <h3 className="text-xl font-bold mb-2">Свадьбы</h3>
+        <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+          Фрагменты лучших моментов: от трепетной церемонии до весёлого банкета. Каждая фотография — история любви, рассказанная без слов.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {["Свадьба", "DJ-сет", "120 гостей"].map((tag, i) => (
+            <span key={i} className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground">{tag}</span>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
 
 export function PortfolioSection() {
   return (
@@ -47,6 +98,7 @@ export function PortfolioSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <WeddingSlider />
           {projects.map((project, index) => (
             <Card
               key={index}
@@ -61,7 +113,6 @@ export function PortfolioSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               </div>
               <CardContent className="p-6">
-
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
