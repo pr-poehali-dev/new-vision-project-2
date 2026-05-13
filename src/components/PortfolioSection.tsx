@@ -4,7 +4,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const weddingPhotos = [
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/88f99e9a-0faa-41a7-9e70-8522bec594c3.jpg",
-  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/4fee5e34-1866-413e-91f6-90e9d824742f.jpg",
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/e3419b76-4d7a-43a9-bc4e-342809264e5c.jpg",
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/314cf467-1cfb-4105-86ee-25fff4802e0a.jpg",
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/ef769249-dd6d-4fd9-a04f-0f13f6baa998.jpg",
