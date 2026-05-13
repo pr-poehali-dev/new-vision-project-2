@@ -10,7 +10,7 @@ const projects = [
     tags: ["Свадьба", "DJ-сет", "120 гостей"],
   },
   {
-    title: "Юбилей компании «СтройГрупп»",
+    title: "Юбилеи компаний и корпоративы",
     category: "Корпоратив · Тюмень",
     image: "/placeholder.jpg",
     description:
