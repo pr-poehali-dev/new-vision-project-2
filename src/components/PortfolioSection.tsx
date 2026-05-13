@@ -3,6 +3,7 @@ import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const weddingPhotos = [
+  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/88f99e9a-0faa-41a7-9e70-8522bec594c3.jpg",
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/4fee5e34-1866-413e-91f6-90e9d824742f.jpg",
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/e3419b76-4d7a-43a9-bc4e-342809264e5c.jpg",
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/314cf467-1cfb-4105-86ee-25fff4802e0a.jpg",
@@ -12,7 +13,6 @@ const weddingPhotos = [
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/c307b644-5895-46ac-b441-cdf3548ce3a9.jpg",
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/3a776f48-4d47-4357-9454-75fd06fed386.jpg",
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/59fb121f-8538-4e18-97d2-7d77b36a2920.jpg",
-  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/88f99e9a-0faa-41a7-9e70-8522bec594c3.jpg",
 ]
 
 const projects = [
