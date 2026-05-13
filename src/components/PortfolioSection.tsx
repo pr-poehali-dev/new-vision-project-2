@@ -8,6 +8,11 @@ const weddingPhotos = [
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/314cf467-1cfb-4105-86ee-25fff4802e0a.jpg",
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/ef769249-dd6d-4fd9-a04f-0f13f6baa998.jpg",
   "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/b5b2724f-6ef7-46d6-8148-b02ce8981c27.jpg",
+  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/79444730-e11c-4d20-8fad-fbbe54476851.jpg",
+  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/c307b644-5895-46ac-b441-cdf3548ce3a9.jpg",
+  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/3a776f48-4d47-4357-9454-75fd06fed386.jpg",
+  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/59fb121f-8538-4e18-97d2-7d77b36a2920.jpg",
+  "https://cdn.poehali.dev/projects/47521221-ac51-4e9b-89b5-14a730bd0f03/bucket/88f99e9a-0faa-41a7-9e70-8522bec594c3.jpg",
 ]
 
 const projects = [
